@@ -67,6 +67,6 @@ dependencies {
     implementation("dev.androidbroadcast.vbpd:vbpd:2.0.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.9.6")
     implementation("androidx.navigation:navigation-ui-ktx:2.9.6")
-    debugImplementation "com.github.chuckerteam.chucker:library:4.0.0"
-    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:4.0.0"
+    debugImplementation("com.github.chuckerteam.chucker:library:4.0.0")
+    releaseImplementation("com.github.chuckerteam.chucker:library-no-op:4.0.0")
 }
