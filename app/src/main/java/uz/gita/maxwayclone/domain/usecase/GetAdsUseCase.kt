@@ -1,9 +1,9 @@
-package uz.gita.maxwayclone.domain.repository
+package uz.gita.maxwayclone.domain.usecase
 
 import kotlinx.coroutines.flow.Flow
 import uz.gita.maxwayclone.UiState
 import uz.gita.maxwayclone.data.model.home.AdModel
 
-interface  Repository {
-    fun getAds(): Flow<UiState<List<AdModel>>>
+interface GetAdsUseCase {
+    operator fun invoke(): Flow<UiState<List<AdModel>>>
 }
