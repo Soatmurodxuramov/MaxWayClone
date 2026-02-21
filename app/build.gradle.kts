@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.devtools.ksp")
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -12,13 +13,15 @@ android {
 
     defaultConfig {
         applicationId = "uz.gita.maxwayclone"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+
 
     buildTypes {
         release {
@@ -35,6 +38,12 @@ android {
     }
     buildFeatures{
         viewBinding = true
+    }
+    buildFeatures{
+        buildConfig = true
+    }
+    defaultConfig{
+        buildConfigField("String" , "BASE_URL" , "\"https://newsworthy-cosmological-song.ngrok-free.dev/\"")
     }
 }
 
@@ -69,4 +78,6 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.9.6")
     debugImplementation("com.github.chuckerteam.chucker:library:4.0.0")
     releaseImplementation("com.github.chuckerteam.chucker:library-no-op:4.0.0")
+    implementation("com.github.TomLeCollegue:ProgressBar-Library-Android-Kotlin:0.1.1")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
