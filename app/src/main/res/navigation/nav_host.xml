@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_host"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/nav_home">
+    <fragment
+    android:id="@+id/nav_home"
+    android:name="uz.gita.maxwayclone.ui.home.HomeFragment"
+    android:label="HomeFragment"
+    tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="uz.gita.maxwayclone.ui.screens.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:id="@+id/nav_basket"
+        android:name="uz.gita.maxwayclone.ui.basket.BasketFragment"
+        android:label="BasketFragment"
+        tools:layout="@layout/fragment_basket" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="uz.gita.maxwayclone.ui.orders.OrdersFragment"
+        android:label="OrdersFragment"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="uz.gita.maxwayclone.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>

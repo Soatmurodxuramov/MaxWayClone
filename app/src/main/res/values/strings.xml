@@ -18,7 +18,7 @@
     <string name="imya_familya">Имя фамилия</string>
     <string name="vremya_prible">Время прибытия:</string>
     <string name="summa_zakaz">Сумма заказа</string>
-    <string name="moy_zakaz">Мои заказы</string>
+    <string name="zakaz">заказы</string>
     <string name="istorya_zakaz">История заказов</string>
     <string name="tekushi_zakaz">Текущие заказы</string>
     <string name="status_zakaz">Статус заказа</string>
@@ -38,6 +38,8 @@
     <string name="nomer_tel">Номер телефона</string>
     <string name="date_rajdenya">Ваш дата рождения</string>
     <string name="posverdit">Подтвердить</string>
+    <string name="uvidemleniya">Уведомление</string>
+    <style name="karzina">Kорзинa</style>
 
 
 </resources>
