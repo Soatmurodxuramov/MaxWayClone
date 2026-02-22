@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/nav_home">
+    <fragment
+    android:id="@+id/nav_home"
+    android:name="uz.gita.maxwayclone.presentation.home.HomeFragment"
+    android:label="HomeFragment"
+    tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_basket"
+        android:name="uz.gita.maxwayclone.presentation.basket.BasketFragment"
+        android:label="BasketFragment"
+        tools:layout="@layout/fragment_basket" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="uz.gita.maxwayclone.presentation.orders.OrderFragment"
+        android:label="OrdersFragment"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="uz.gita.maxwayclone.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
